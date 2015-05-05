@@ -109,6 +109,8 @@ public class OpenCPURuntimeEnvironment implements RuntimeEnvironment {
 
     /**
      * Default constructor for the {@link OpenCPURuntimeEnvironment}.
+     *
+     * @throws URISyntaxException URISyntaxException thrown.
      */
     public OpenCPURuntimeEnvironment () throws URISyntaxException {
         this.setBaseURI(new URI("http", null, "localhost", 9999, "/ocpu", null, null));
@@ -155,8 +157,8 @@ public class OpenCPURuntimeEnvironment implements RuntimeEnvironment {
      * @param function The name of the function to be called.
      * @param input The input as a JSON string.
      * @return The output as a JSON string.
-     * @throws IOException I/O Exception thrown.
-     * @throws RuntimeError Runtime Exception thrown.
+     * @throws ProblemError Problem Error thrown.
+     * @throws RuntimeError Runtime Error thrown.
      */
     public String rpc (String cpackage, String function, String input) throws ProblemError, RuntimeError {
         // Get an http client:
