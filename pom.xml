@@ -7,7 +7,7 @@
 
     <groupId>com.vsthost.rnd</groupId>
     <artifactId>opencpu-java-client</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
     <name>OpenCPU Java Client</name>
